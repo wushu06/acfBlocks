@@ -2,7 +2,8 @@
     <div class="container">
         <div class="row">
         	<div class="large-18 large-offset-3 medium-18 medium-offset-3 columns end">
-        		<?php if( $title = theme( 'title' ) ) { ?>
+        		<?php if( $title = theme( 'title' ) ) { ?> <button class="btn btn-danger">Test Bootstrap</button>
+                    <i class="fa fa-envelope ">test font awesome</i>
             		<h2 class="divide divide--center text-center single__title"><?php echo $title; ?></h2>
             	<?php } ?>
 

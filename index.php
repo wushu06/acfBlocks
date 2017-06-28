@@ -18,8 +18,6 @@
         		</div>
         	<?php endif; ?>
 
-            <?php motionspot_pagination(); ?>
-        </div>
-    </section>
+
 
 <?php get_footer(); ?>

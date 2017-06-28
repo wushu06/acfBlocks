@@ -22,6 +22,31 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class( 'font-size--loaded' ); ?>>
+
+<div>
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"> <img  src="<?php echo THEME_DIR; ?>/assets/images/logo.svg" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" class="img-responsive logo-mobile" />
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                </ul>
+
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+</div>
     
     <div class="menu-button hide-for-large-up">
         <span>&nbsp;</span> <div class="menu-mobile">Menu</div>
@@ -29,7 +54,6 @@
 
     <nav class="mobile-nav hide-for-large-up">
         <?php wp_nav_menu( array( 'theme_location' => 'mobile_nav', 'menu_class' => 'menu menu--mobile', 'container' => 'ul' ) ); ?>
-        <img  src="<?php echo THEME_DIR; ?>/assets/images/logo.svg" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" class="img-responsive logo-mobile" />
 
     </nav>
 
